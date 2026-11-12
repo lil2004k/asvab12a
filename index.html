@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ASVAB Prep 12A</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0a0a0a"><meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="ASVAB 12A">
+<meta name="format-detection" content="telephone=no,date=no,address=no,email=no"><meta name="app-version" content="c0f563b3c7">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" type="image/png" href="icon-192.png">
+<style>
+@font-face{font-family:"Oswald";src:url("oswald.ttf") format("truetype");font-weight:200 700;font-display:swap}
+:root{--gold:#F2C318;--bg:#141414;--card:#222222;--card2:#2c2c2c;--line:#3d3d3d;--ink:#f5f5f5;--muted:#b3b3b3;--ok:#1f8a45;--okl:#5fd68a;--bad:#d9d9d9;--od:#1f8a45;--od2:#26a353;--disp:"Oswald","Bebas Neue","Arial Narrow","Roboto Condensed","Helvetica Neue Condensed",Impact,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.018) 0 2px,transparent 2px 6px),radial-gradient(ellipse at top,#262626,#0e0e0e 70%);background-attachment:fixed;min-height:100vh}
+header{background:#0a0a0a;color:#fff;padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;border-bottom:2px solid var(--gold)}
+header h1{font-family:var(--disp);font-weight:700;font-size:28px;margin:0;line-height:1;text-transform:uppercase;letter-spacing:1px;color:#fff}
+header h1 em{font-style:normal;color:var(--gold)}
+header .sub{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:3px;margin-top:4px;padding-left:10px;border-left:2px solid var(--gold)}
+nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}nav a{color:#ddd;text-decoration:none;padding:6px 10px;font-family:var(--disp);font-weight:500;font-size:15px;text-transform:uppercase;letter-spacing:2px;border-bottom:2px solid transparent}
+nav a.on,nav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+main{max-width:980px;margin:0 auto;padding:18px}
+.card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:2px;padding:16px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.card h2{margin:0 0 12px;font-family:var(--disp);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:1.5px;color:#fff;line-height:1.1}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.stat{background:var(--card2);border:1px solid var(--line);padding:10px;text-align:center}.stat b{display:block;font-family:var(--disp);font-size:32px;font-weight:700;color:var(--gold);line-height:1.15}.stat span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
+.bar{height:8px;background:#3a3a3a;overflow:hidden}.bar i{display:block;height:100%;background:var(--gold)}
+table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:7px 6px;border-bottom:1px solid var(--line);text-align:left}th{font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);font-weight:600}
+.btn{display:inline-block;background:var(--ok);color:#fff;border:0;border-radius:2px;padding:10px 16px;font-family:var(--disp);font-weight:500;font-size:16px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;text-decoration:none;margin:3px 4px 3px 0}
+.btn:hover{background:var(--od2)}.btn.alt{background:transparent;color:#fff;border:1px solid #777}.btn.alt:hover{border-color:var(--gold);color:var(--gold)}.btn.gold{background:var(--gold);color:#111}.btn:disabled{opacity:.4;cursor:not-allowed}
+.choice{display:block;width:100%;text-align:left;background:var(--card2);border:2px solid var(--line);border-radius:2px;padding:12px;margin:8px 0;font-size:16px;cursor:pointer;color:var(--ink)}
+.choice:hover{border-color:#777}.choice.sel{border-color:var(--gold);background:#33301f}.choice.right{border-color:var(--okl);background:#16341f}.choice.wrong{border-color:#9a9a9a;border-style:dashed;background:#1a1a1a}
+.choice b{display:inline-block;width:26px;color:var(--gold);font-family:var(--disp)}
+.flash .front{font-size:1.25em;margin:12px 0}.rate,.decks{display:flex;flex-wrap:wrap;gap:6px}.src{font-size:.85em}.sheet{margin-top:6px}.tbl{width:100%;border-collapse:collapse}.tbl td,.tbl th{border-bottom:1px solid #333;padding:4px;text-align:left}.big{font-size:1.6em}.dpill{display:inline-block;margin-left:10px;padding:2px 8px;border:1px solid #555;border-radius:3px;font-size:.78em;letter-spacing:.5px;color:#ddd;white-space:nowrap}.dpill.d4,.dpill.d5{border-color:#F2C318;color:#F2C318}.spark{vertical-align:middle}.chk{display:block;margin:6px 0}.bad{color:#e66}.btn.small{font-size:.8em;padding:4px 10px}
+.passage{background:#1a1a1a;border-left:3px solid var(--gold);padding:10px;margin-bottom:10px;line-height:1.55}
+.fb{padding:12px;margin-top:10px;white-space:pre-wrap;line-height:1.5}.fb.ok{background:#16341f;border:1px solid var(--okl)}.fb.no{background:#1a1a1a;border:2px solid #9a9a9a}
+.fb.ok b:first-child{color:var(--okl)}.fb.no b:first-child{color:#fff}
+.formula{font-family:ui-monospace,Consolas,monospace;background:#111;color:var(--gold);border:1px dashed #666;padding:6px;margin:6px 0;display:inline-block}
+.tag{display:inline-block;font-size:10px;padding:3px 7px;background:var(--gold);color:#111;font-weight:700;text-transform:uppercase;letter-spacing:2px}
+.ok{color:var(--okl)}.no{color:#fff;font-weight:600}.muted{color:var(--muted);font-size:13px}
+.disc{font-size:12px;color:var(--muted);border-top:1px solid var(--line);margin-top:20px;padding-top:10px}
+.banner{padding:8px 12px;font-size:13px;background:#2b2610;color:var(--gold);border-bottom:1px solid var(--gold)}
+.timer{float:right;font-family:var(--disp);font-size:18px;color:var(--gold)}
+select,input[type=number],input[type=date],input:not([type]){padding:8px;font-size:15px;border-radius:2px;border:1px solid #666;background:#111;color:#fff;color-scheme:dark}
+.qhead{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px}.qhead>b,.qhead>div>b{font-family:var(--disp);font-size:18px;letter-spacing:1px;text-transform:uppercase}
+.qtext{font-size:19px;line-height:1.45;margin:8px 0 4px}
+a{color:var(--gold)}details summary{cursor:pointer}
+@media(max-width:600px){header h1{font-size:23px}nav a{padding:5px 6px;font-size:13px;letter-spacing:1px}.qtext{font-size:17px}main{padding:10px}}
+.prog{margin-bottom:14px}.proghead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.progtitle{font-family:var(--disp);font-size:20px;text-transform:uppercase;letter-spacing:1px}
+.pill{background:#16341f;color:var(--okl);border:1px solid var(--okl);border-radius:12px;padding:2px 10px;font-size:12px;font-weight:700}.prog .bar i{background:var(--ok)}.progline{margin-top:6px}
+.review{line-height:1.55}.review .mline{margin:6px 0}.mdisp{text-align:center;margin:8px 0;font-size:1.1em;overflow-x:auto}.study{border-left:2px solid var(--gold);padding-left:8px}.gold{color:var(--gold)}
+hr.div{border:0;border-top:1px solid var(--line);margin:18px 0}.qtitle{font-family:var(--disp);font-size:20px;letter-spacing:1px;text-transform:uppercase}
+.choice{display:flex;align-items:center;gap:8px;border-radius:24px;padding:10px 14px}.choice .radio{flex:none;width:18px;height:18px;border:2px solid #aaa;border-radius:50%;display:inline-block}
+.choice.sel .radio{border-color:var(--gold);background:radial-gradient(circle,var(--gold) 45%,transparent 50%)}.choice b{width:auto}
+.btn.submit{display:block;width:100%;border-radius:24px;margin:10px 0 6px;padding:12px}.katex{font-size:1.1em;color:#fff}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:50;padding:16px}.mbox{background:var(--card);border:1px solid var(--gold);padding:18px;max-width:440px;width:100%}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#111;color:var(--gold);border:1px solid var(--gold);padding:10px 16px;z-index:60;max-width:90%}
+</style><style>
+/* iPhone layout (390px class widths): safe areas, 44px+ tap targets, no horizontal page scroll, readable KaTeX. Same colors as the desktop app. */
+html{background:#0e0e0e;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background-attachment:scroll;min-height:100vh;min-height:100dvh;overflow-wrap:break-word;padding-bottom:env(safe-area-inset-bottom)}
+button,a,label,summary,select,input{touch-action:manipulation;-webkit-tap-highlight-color:rgba(242,195,24,.25)}
+header{padding:calc(12px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) 10px calc(16px + env(safe-area-inset-left))}
+.banner{padding-left:calc(12px + env(safe-area-inset-left));padding-right:calc(12px + env(safe-area-inset-right))}
+.banner a{display:inline-block;min-height:32px;line-height:32px}
+main{padding:14px calc(14px + env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) calc(14px + env(safe-area-inset-left))}
+.btn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;text-align:center;line-height:1.15;vertical-align:middle}
+.btn.small{min-height:44px;font-size:13px;padding:6px 12px}
+.btn.submit{display:flex;min-height:50px}
+.choice{min-height:52px;font-size:17px;line-height:1.35;overflow-wrap:anywhere}
+select,input[type=number],input[type=date],input:not([type]),textarea{font-size:16px;min-height:44px;max-width:100%}
+textarea{font-size:16px;background:#111;color:#fff;border:1px solid #666;border-radius:2px;padding:8px}
+input[type=checkbox]{width:22px;height:22px;accent-color:var(--gold);vertical-align:middle;flex:none}
+.chk{display:flex;align-items:center;gap:10px;min-height:44px}
+details summary{min-height:44px;padding:10px 0;line-height:1.4}
+.card>a:not(.btn){display:inline-block;min-height:44px;line-height:44px}
+.tscroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+svg,img,canvas,video{max-width:100%}code{word-break:break-all}
+.qtext{overflow-wrap:break-word}
+.katex{font-size:1.2em}.mdisp,.katex-display{max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0}
+.timer{position:fixed;z-index:45;float:none;right:calc(12px + env(safe-area-inset-right));bottom:calc(12px + env(safe-area-inset-bottom));background:#0a0a0a;border:1px solid var(--gold);padding:8px 14px;font-size:20px;min-height:44px;display:flex;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.6)}
+.timer:empty{display:none}
+.toast{bottom:calc(76px + env(safe-area-inset-bottom))}
+.modal{padding:calc(16px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) calc(16px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left))}
+.mbox .btn{min-width:96px}
+@media(max-width:700px){
+  header{gap:8px}header>div:first-child{width:100%}header h1{font-size:24px}header .sub{letter-spacing:2px;font-size:10px}
+  nav{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;width:100%;margin:2px 0 0}
+  nav a{min-height:44px;display:flex;align-items:center;justify-content:center;padding:0 2px;font-size:13px;letter-spacing:1px;text-align:center;background:#141414}
+  .card{padding:14px 12px}.card h2{font-size:20px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat b{font-size:28px}
+  table{font-size:13px}td,th{padding:7px 4px}
+  .qtext{font-size:18px}
+  .qhead{align-items:flex-start}
+  .dpill{margin-left:0}
+}
+@media(hover:none){.btn:not(.alt):not(.gold):hover{background:var(--ok)}.btn.gold:hover{background:var(--gold)}.btn.alt:hover{background:transparent;border-color:#777;color:#fff}.choice:not(.sel):not(.right):not(.wrong):hover{border-color:var(--line)}nav a:not(.on):hover{color:#ddd;border-bottom-color:transparent}}
+</style></head><body>
+<header><div><h1>ASVAB Prep · <em>12A</em> Track</h1><div class="sub">Army National Guard · Engineer Officer goal · GT 110+</div></div>
+<nav><a href="#dash">Dashboard</a><a href="#quiz">Quiz</a><a href="#practice">Practice</a><a href="#plan">Plan</a><a href="#formulas">Formulas</a><a href="#fitness">Fitness</a><a href="#history">History</a><a href="#data">Data</a></nav></header><div id="banner" class="banner" style="display:none"></div>
+<main id="app"></main>
+<link rel="stylesheet" href="katex.min.css"><script src="katex.min.js"></script><script src="boot.js?v=c0f563b3c7"></script></body></html>
